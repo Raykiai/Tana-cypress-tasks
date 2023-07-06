@@ -7,13 +7,13 @@ describe('', function() {
 
         // Find the username field by its id and type the username
         cy.get('#user-name').type('standard_user')
-
+    
         // Find the password field by its id and type the password
         cy.get('#password').type('secret_sauce')
 
         // Find the login button by its id and click it to submit the form
         cy.get('#login-button').click()
-        
+
         // Scroll the page up
         cy.scrollTo('top');
 
